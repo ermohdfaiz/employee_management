@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Update {{emp_id}}</h1>
+<form action="/update/{{emp_id}}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" autocomplete="off" autofocus id="name" name="name" placeholder="Name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" autocomplete="off" autofocus id="email" name="email" placeholder="Email">
+    <br>
+    <label for="designation">Designation:</label>
+    <input type="text" autocomplete="off" autofocus id="designation" name="designation" placeholder="Designation">
+    <br>
+    <label for="salary">Salary:</label>
+    <input type="number" autocomplete="off" autofocus id="salary" name="salary" placeholder="Salary">
+    </select>
+    <br>
+    <button type="submit">Update</button>
+</form>
+
+{% endblock %}

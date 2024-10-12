@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1>Register</h1>
+<form action="/employees" method="post">
+    <label for="name">Name:</label>
+    <input type="text" autocomplete="off" autofocus id="name" name="name" placeholder="Name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" autocomplete="off" autofocus id="email" name="email" placeholder="Email">
+    <br>
+    <label for="designation">Designation:</label>
+    <input type="text" autocomplete="off" autofocus id="designation" name="designation" placeholder="Designation">
+    <br>
+    <label for="salary">Salary:</label>
+    <input type="number" autocomplete="off" autofocus id="salary" name="salary" placeholder="Salary">
+    </select>
+    <br>
+    <button type="submit">Register</button>
+</form>
+<br>
+<form action="/employees" method="get">
+    <button type="submit">Show</button>
+</form>
+
+<form action="/find_employees" method="get">
+    <label for="emp_id">find by id:</label>
+    <input type="number" autocomplete="off" autofocus id="emp_id" name="emp_id" placeholder="employee_id">
+    <br>
+    <button type="submit">Search</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+# Ignore virtual environment directories
+.venv/
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore other files
+*.log
+*.tmp
+*.bak
