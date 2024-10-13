@@ -4,11 +4,12 @@ A Flask-based web application for managing employee data.
 
 ## Features
 
-- Employee listing
-- Employee creation
-- Employee editing
-- Employee deletion
-- Database connection and query execution using `psycopg2`
+- Employee listing: View all employees.
+- Employee creation: Add new employees.
+- Employee editing: Update existing employee details.
+- Employee deletion: Remove employees from the system.
+- Find by ID: Search for an employee by their ID.
+- Database connection: PostgreSQL database interaction via `psycopg2`
 
 ## Requirements
 
@@ -34,11 +35,11 @@ The application uses a PostgreSQL database with the following schema:
 
 ## Routes and Endpoints
 
-- `GET /`: The root route, which renders the `index.html` template.
-- `GET /employees`: The route for listing all employees.
-- `GET /create`: The route for creating a new employee.
-- `GET /edit/<id>`: The route for editing an existing employee.
-- `GET /delete/<id>`: The route for deleting an employee.
+- `GET /`: Renders the home page (index.html).
+- `GET/POST /employees`: Lists all employees or adds a new employee.
+- `GET /find_employees`: Finds an employee by their ID.
+- `POST /update/<id>`: Updates employee details.
+- `GET/DELETE /delete/<id>`: Deletes an employee.
 
 ## Templates
 
@@ -74,3 +75,6 @@ To run the application, follow these steps:
    ```bash
    flask --debug run
    ```
+## License
+
+This project is licensed under the MIT License.
